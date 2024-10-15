@@ -9,6 +9,7 @@
   <body>
     <script>
       const url = JSON.stringify(location.pathname + location.search);
+      console.log('url: ', url);
       localStorage.url = url;
       location.replace("/");
     </script>
