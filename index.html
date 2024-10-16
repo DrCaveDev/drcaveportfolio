@@ -8,7 +8,9 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
+      console.log('anything?');
       (function(l) {
+          console.log('l inside index: ', l);
         if (l.search[1] === '/' ) {
           var decoded = l.search.slice(1).split('&').map(function(s) {
             return s.replace(/~and~/g, '&')
@@ -17,4 +19,4 @@
               l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
-      }(window.location))</script><script defer="defer" src="runtime.33bdd5797337fe5c37a3.js"></script><script defer="defer" src="vendors.2a3adf2671c81d77e15d.js"></script><script defer="defer" src="main.c45d231f3b0a13a6d216.js"></script></head><body><div id="root"></div></body></html>
+      }(window.location))</script><script defer="defer" src="runtime.33bdd5797337fe5c37a3.js"></script><script defer="defer" src="vendors.2a3adf2671c81d77e15d.js"></script><script defer="defer" src="main.4de7e90eff3022d69200.js"></script></head><body><div id="root"></div></body></html>
